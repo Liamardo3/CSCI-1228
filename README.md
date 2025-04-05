@@ -28,9 +28,6 @@ The corresponding command in your Tester.java file is:
 
 //download
 Summary.main(new String[]{"download", "people.csv"});
-Here is a sample run:
-
-Drawing
 
 summary: print a summary for the file (you must caclulate the values, not just hardcode them):
 Total number of records (excluding the header)
@@ -45,9 +42,7 @@ The corresponding command in your Tester.java file is:
 
 //summary - csv
 Summary.main(new String[]{"summary", "person.csv"});
-Here is a sample run:
 
-Drawing
 
 print: print the contents of the file with sorting options.
 The second command-line argument must be a name of the input file (you must provide a name of the input file: the .CSV one or the binary one depending on the second argument). The outputs must be the same for both files.
@@ -58,4 +53,18 @@ The fourth argument is optional: it tells your program whether the sort must be 
 
 NOTE: Use Comparators for the Person class, do not forget to re-compile the Person class after you add Comparators to it!
 
-Here are the sample runs:
+General Hints:
+Think about designing your methods that help to re-use your code and avoid code duplication (e.g., it's easier to work with an array of Personss for printing and providing a summary)
+You are provided with the Tester.java file: feel free to run the needed commands from it instead of using command-line interface - it will save your time!
+Grading scheme (max 10 points):
+[2 pts] The Person class has all necessary Comparators to allow sorting objects by the required fields
+[3 pts] The Summary program correctly calculates and prints the stats for the summary command
+[2 pts] The Summary program correctly implements the print command excluding the optional arguments for sorting the records
+[1.5 pts] The Summary program correctly implements the sorting arguments for sorting the records for the print command (n/a/h)
+[1.5 pts] The Summary program correctly implements the sorting arguments for sorting the records for the print command (for sorting in reverse order)
+BONUS: 1.5 pt if the project is on GitHub with the link provided and the project has reasonable commit history
+Points may be subtracted for:
+[-1] Poorly formatted code
+[-1] Javadocs are missing or incorrect
+[-1] Meaningless variable names or variable names that do not follow the standards
+[-1] Poorly designed code (e.g., duplicating code without proper code reuse)
